@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1E8E0"
+    android:orientation="vertical"
+    tools:context=".MainActivity1">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B1E8E0"
+        android:clipToPadding="false"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="left|bottom">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B1E8E0">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="398dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Image To Text"
+                    android:textAlignment="center"
+                    android:textColor="#F44336"
+                    android:textSize="29sp"
+                    android:textStyle="bold|italic" />
+
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="144sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="35sp"
+                    android:background="@drawable/logo1" />
+
+
+                <pl.droidsonroids.gif.GifTextView
+                    android:layout_width="228dp"
+                    android:layout_height="285dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/abcde" />
+
+                <Button
+
+                    android:id="@+id/buttonsub"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="@drawable/buttonstyle"
+                    android:backgroundTint="#FBE867"
+                    android:text="Start Now"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic" />
+
+
+                <!--<LinearLayout-->
+
+
+                <!--android:id="@+id/l2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="76dp"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

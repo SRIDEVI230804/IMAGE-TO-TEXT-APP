@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1E8E0"
+    tools:context=".selection">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="CONVERTER"
+                android:textColor="#F44336"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="169dp"
+            android:layout_height="151dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/logo1" />
+
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="24dp"
+            android:rowCount="2">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1234"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="39dp"
+                app:cardBackgroundColor="#B1E8E0"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/imagetotext" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:text=" Image"
+                        android:textAlignment="center"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="To Text"
+                        android:textAlignment="center"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card12345"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="39dp"
+                app:cardBackgroundColor="#B1E8E0"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/voicetotext" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:text="  Voice"
+                        android:textAlignment="center"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text=" To Text"
+                        android:textAlignment="center"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="8"-->
+<!--            android:alignmentMode="alignMargins"-->
+<!--            android:columnCount="2"-->
+<!--            android:columnOrderPreserved="false"-->
+<!--            android:padding="24dp"-->
+<!--            android:rowCount="2">-->
+
+<!--            &lt;!&ndash; Row 2 &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Column 1 &ndash;&gt;-->
+<!--            <android.support.v7.widget.CardView-->
+<!--                android:id="@+id/card123456"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginLeft="19dp"-->
+<!--                android:layout_marginRight="19dp"-->
+<!--                android:layout_marginBottom="39dp"-->
+<!--                app:cardBackgroundColor="@android:color/transparent"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                app:cardElevation="8dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="65dp"-->
+<!--                        android:layout_height="65dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:src="@drawable/c" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="35dp"-->
+<!--                        android:text="About"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/lightdarkerorange"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:text="  OCR"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/lightdarkerorange"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </android.support.v7.widget.CardView>-->
+
+<!--            &lt;!&ndash; Column 2 &ndash;&gt;-->
+<!--            <android.support.v7.widget.CardView-->
+<!--                android:id="@+id/card1234567"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginLeft="19dp"-->
+<!--                android:layout_marginRight="19dp"-->
+<!--                android:layout_marginBottom="39dp"-->
+<!--                app:cardBackgroundColor="@android:color/transparent"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                app:cardElevation="8dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="65dp"-->
+<!--                        android:layout_height="65dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:src="@drawable/d" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="35dp"-->
+<!--                        android:text="Contact"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/lightdarkerorange"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:text="     Us"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/lightdarkerorange"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </android.support.v7.widget.CardView>-->
+
+
+<!--            &lt;!&ndash; Row 2 &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Column 1 &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Column 2 &ndash;&gt;-->
+
+
+<!--        </GridLayout>-->
+
+
+    </LinearLayout>
+
+</ScrollView>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/ll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/qwerty"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="10dp"-->
+    <!--tools:context=".selection">-->
+
+
+
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clipToPadding="false"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/bankcardId"-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="190dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:src="@drawable/ic_attach_money_black_24dp" />-->
+    <!--&lt;!&ndash;android:background="@drawable/cerclebackgroundpurple"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="Banking"-->
+    <!--android:textColor="@color/colorprimary"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@color/lightgray" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Check your bank activities"-->
+    <!--android:textColor="@android:color/darker_gray" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/card123"-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="190dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="64dp"-->
+
+    <!--android:padding="10dp"-->
+    <!--android:src="@drawable/ic_lightbulb_outline_black_24dp" />-->
+
+    <!--&lt;!&ndash;android:background="@drawable/cerclebackgroundpink"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="Ideas"-->
+    <!--android:textColor="@color/colorprimary"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@color/lightgray" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Check your bank activities"-->
+    <!--android:textColor="@android:color/darker_gray" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clipToPadding="false"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/card14"-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="190dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:src="@drawable/ic_control_point_black_24dp" />-->
+    <!--&lt;!&ndash;android:background="@drawable/cerclebackgroundgreen"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="Add"-->
+    <!--android:textColor="@color/colorprimary"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@color/lightgray" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Check your bank activities"-->
+    <!--android:textColor="@android:color/darker_gray" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/card13"-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="190dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:src="@drawable/ic_attach_file_black_24dp" />-->
+    <!--&lt;!&ndash;android:background="@drawable/cerclebackgroundyello"&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="Links"-->
+    <!--android:textColor="@color/colorprimary"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@color/lightgray" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Check your bank activities"-->
+    <!--android:textColor="@android:color/darker_gray" />-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:clipToPadding="false"-->
+    <!--android:gravity="center"-->
+
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
